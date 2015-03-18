@@ -69,7 +69,7 @@ class Layout {
                 // get the contents of the view and store it
                 $obj =& get_instance();
                 //$obj->cache->save('data', $data, 3600);
-                $view = $obj->parser->parse('pages/'.$name, $data, TRUE);
+                $view = $obj->parser->parse($name, $data, TRUE);
                 
                 // set the title
                 $title = '';

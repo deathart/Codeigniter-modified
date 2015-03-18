@@ -39,6 +39,6 @@ class Welcome extends CI_Controller {
     public function index()
     {
         $this->data['ci_version'] = 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>';;
-        $this->layout->view('welcome_message', $this->data);
+        $this->layout->view('pages/welcome_message', $this->data);
     }
 }
