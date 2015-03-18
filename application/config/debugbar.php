@@ -1,24 +1,15 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$config['debugbar_enabled']   = TRUE;
-
-$config['debugbar_sections'] = array(
-	
-	//comment out these if you prefer to use the global CI profiler config file
-	'benchmarks'      => TRUE, 
-	'config'          => TRUE,
-	'get'             => TRUE,
-	'controller_info' => TRUE,
-	'http_headers'    => TRUE,
-	'memory_usage'    => TRUE,
-	'post'            => TRUE,
-	'queries'         => TRUE,
-	'uri_string'      => TRUE,
-	
-	
-	//custom sections added by debugbar
-	'files'           => TRUE,
-	'console'         => TRUE,
-	'userdata'        => TRUE
-);
+$config['benchmarks'] = TRUE;
+$config['config'] = TRUE;
+$config['controller_info'] = TRUE;
+$config['get'] = TRUE;
+$config['http_headers'] = TRUE;
+$config['memory_usage'] = TRUE;
+$config['post'] = TRUE;
+$config['queries'] = TRUE;
+$config['eloquent'] = FALSE;
+$config['uri_string'] = TRUE;
+$config['view_data'] = TRUE;
+$config['query_toggle_count'] = 50;
 

@@ -263,3 +263,78 @@ ERROR - 2015-03-18 23:37:18 --> Could not find the language line "profiler_http_
 INFO - 2015-03-18 23:37:18 --> File loaded: C:\xampp\Codeigniter-modified\application\views\profiler_template.php
 INFO - 2015-03-18 23:37:18 --> Final output sent to browser
 DEBUG - 2015-03-18 23:37:18 --> Total execution time: 0.1059
+INFO - 2015-03-18 23:38:56 --> Config Class Initialized
+INFO - 2015-03-18 23:38:56 --> Hooks Class Initialized
+DEBUG - 2015-03-18 23:38:56 --> UTF-8 Support Enabled
+INFO - 2015-03-18 23:38:56 --> Utf8 Class Initialized
+INFO - 2015-03-18 23:38:56 --> URI Class Initialized
+INFO - 2015-03-18 23:38:56 --> Router Class Initialized
+INFO - 2015-03-18 23:38:56 --> Output Class Initialized
+INFO - 2015-03-18 23:38:56 --> Security Class Initialized
+DEBUG - 2015-03-18 23:38:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-03-18 23:38:56 --> Input Class Initialized
+INFO - 2015-03-18 23:38:56 --> Language Class Initialized
+INFO - 2015-03-18 23:38:56 --> Loader Class Initialized
+DEBUG - 2015-03-18 23:38:56 --> Config file loaded: C:\xampp\Codeigniter-modified\application\config/debugbar.php
+INFO - 2015-03-18 23:38:56 --> Helper loaded: url_helper
+INFO - 2015-03-18 23:38:56 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2015-03-18 23:38:56 --> Database Driver Class Initialized
+INFO - 2015-03-18 23:38:56 --> Session: Class initialized using 'files' driver.
+DEBUG - 2015-03-18 23:38:56 --> Forensics Console library loaded
+INFO - 2015-03-18 23:38:56 --> Controller Class Initialized
+INFO - 2015-03-18 23:38:56 --> File loaded: C:\xampp\Codeigniter-modified\application\views\welcome_message.php
+INFO - 2015-03-18 23:38:56 --> Helper loaded: language_helper
+INFO - 2015-03-18 23:38:56 --> Helper loaded: text_helper
+INFO - 2015-03-18 23:38:56 --> File loaded: C:\xampp\Codeigniter-modified\application\views\profiler_template.php
+INFO - 2015-03-18 23:38:56 --> Final output sent to browser
+DEBUG - 2015-03-18 23:38:56 --> Total execution time: 0.0978
+INFO - 2015-03-18 23:40:04 --> Config Class Initialized
+INFO - 2015-03-18 23:40:04 --> Hooks Class Initialized
+DEBUG - 2015-03-18 23:40:04 --> UTF-8 Support Enabled
+INFO - 2015-03-18 23:40:04 --> Utf8 Class Initialized
+INFO - 2015-03-18 23:40:04 --> URI Class Initialized
+INFO - 2015-03-18 23:40:04 --> Router Class Initialized
+INFO - 2015-03-18 23:40:04 --> Output Class Initialized
+INFO - 2015-03-18 23:40:04 --> Security Class Initialized
+DEBUG - 2015-03-18 23:40:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-03-18 23:40:04 --> Input Class Initialized
+INFO - 2015-03-18 23:40:04 --> Language Class Initialized
+INFO - 2015-03-18 23:40:04 --> Loader Class Initialized
+DEBUG - 2015-03-18 23:40:04 --> Config file loaded: C:\xampp\Codeigniter-modified\application\config/debugbar.php
+INFO - 2015-03-18 23:40:04 --> Helper loaded: url_helper
+INFO - 2015-03-18 23:40:04 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2015-03-18 23:40:04 --> Database Driver Class Initialized
+INFO - 2015-03-18 23:40:04 --> Session: Class initialized using 'files' driver.
+DEBUG - 2015-03-18 23:40:05 --> Forensics Console library loaded
+INFO - 2015-03-18 23:40:05 --> Controller Class Initialized
+INFO - 2015-03-18 23:40:05 --> File loaded: C:\xampp\Codeigniter-modified\application\views\welcome_message.php
+INFO - 2015-03-18 23:40:05 --> Helper loaded: language_helper
+INFO - 2015-03-18 23:40:05 --> Helper loaded: text_helper
+INFO - 2015-03-18 23:40:05 --> File loaded: C:\xampp\Codeigniter-modified\application\views\profiler_template.php
+INFO - 2015-03-18 23:40:05 --> Final output sent to browser
+DEBUG - 2015-03-18 23:40:05 --> Total execution time: 0.1384
+INFO - 2015-03-18 23:40:20 --> Config Class Initialized
+INFO - 2015-03-18 23:40:20 --> Hooks Class Initialized
+DEBUG - 2015-03-18 23:40:20 --> UTF-8 Support Enabled
+INFO - 2015-03-18 23:40:20 --> Utf8 Class Initialized
+INFO - 2015-03-18 23:40:20 --> URI Class Initialized
+INFO - 2015-03-18 23:40:20 --> Router Class Initialized
+INFO - 2015-03-18 23:40:20 --> Output Class Initialized
+INFO - 2015-03-18 23:40:20 --> Security Class Initialized
+DEBUG - 2015-03-18 23:40:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-03-18 23:40:20 --> Input Class Initialized
+INFO - 2015-03-18 23:40:20 --> Language Class Initialized
+INFO - 2015-03-18 23:40:20 --> Loader Class Initialized
+DEBUG - 2015-03-18 23:40:20 --> Config file loaded: C:\xampp\Codeigniter-modified\application\config/debugbar.php
+INFO - 2015-03-18 23:40:20 --> Helper loaded: url_helper
+INFO - 2015-03-18 23:40:20 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2015-03-18 23:40:20 --> Database Driver Class Initialized
+INFO - 2015-03-18 23:40:20 --> Session: Class initialized using 'files' driver.
+DEBUG - 2015-03-18 23:40:20 --> Forensics Console library loaded
+INFO - 2015-03-18 23:40:20 --> Controller Class Initialized
+INFO - 2015-03-18 23:40:20 --> File loaded: C:\xampp\Codeigniter-modified\application\views\welcome_message.php
+INFO - 2015-03-18 23:40:20 --> Helper loaded: language_helper
+INFO - 2015-03-18 23:40:20 --> Helper loaded: text_helper
+INFO - 2015-03-18 23:40:20 --> File loaded: C:\xampp\Codeigniter-modified\application\views\profiler_template.php
+INFO - 2015-03-18 23:40:20 --> Final output sent to browser
+DEBUG - 2015-03-18 23:40:20 --> Total execution time: 0.0967
