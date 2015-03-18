@@ -9,6 +9,14 @@ class Welcome extends CI_Controller {
         
         $this->output->enable_profiler(true);
         
+        $this->title_for_layout = ('Welcome to CodeIgniter');
+        
+        $this->layout->add_includes('css', 'assets/css/style.css');
+        $this->layout->add_includes('css', 'assets/css/debugbar.css');
+        
+        $this->layout->add_includes('js', 'assets/js/jquery.js');
+        $this->layout->add_includes('js', 'assets/js/debugbar.js');
+        
     }
 
 	/**
@@ -28,6 +36,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+            $this->layout->view('welcome_message');
 	}
 }
