@@ -81,17 +81,10 @@ class MY_Parser extends CI_Parser {
     
     protected function parse_function($template) {
         
-        if(isset($_SERVER['HTTPS'])){
-            $protocol = ($_SERVER['HTTPS'] && $_SERVER['HTTPS'] != "off") ? "https" : "http";
-        }
-        else{
-            $protocol = 'http';
-        }
-        
         $template = str_replace('{function:base_url}', $this->ci->config->item('base_url_perso') . "/", $template);
         $template = str_replace('{function:controller}', $this->ci->uri->segment(2).'/', $template);
         $template = str_replace('{function:title_for_layout}', $this->ci->title_for_layout, $template);
-        $template = str_replace('{function:assets_images}', $protocol . "://" . $_SERVER['HTTP_HOST'] . "/assets/images/", $template);
+        $template = str_replace('{function:assets_images}', $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . "/assets/images/", $template);
         
         return $template;
         
@@ -99,11 +92,9 @@ class MY_Parser extends CI_Parser {
     
     protected function parse_session($template) {
         
-        $template = str_replace('{session:login}', $this->ci->session->userdata('logged_in'), $template);
+        $template = str_replace('{session:login_in}', $this->ci->session->userdata('logged_in'), $template);
         $template = str_replace('{session:id}', $this->ci->session->userdata('account_id'), $template);
         $template = str_replace('{session:pseudo}', $this->ci->session->userdata('account_name'), $template);
-        $template = str_replace('{session:gmlevel}', $this->ci->session->userdata('account_gmlevel'), $template);
-        $template = str_replace('{session:rang}', $this->ci->session->userdata('account_rang'), $template);
         
         return $template;
         

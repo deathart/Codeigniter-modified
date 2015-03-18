@@ -68,7 +68,6 @@ class Layout {
                 
                 // get the contents of the view and store it
                 $obj =& get_instance();
-                $obj->load->library('MY_Parser');
                 //$obj->cache->save('data', $data, 3600);
                 $view = $obj->parser->parse('pages/'.$name, $data, TRUE);
                 
