@@ -39,14 +39,14 @@ class core {
             $this->progressbarpourcent = 70;
             $this->retour .= ('<li><a href="Require">Require</a></li>');
             $this->retour .= ('<li><a href="File">File</a></li>');
-            $this->retour .= ('<li><a href="Config">Config</a></li>');
+            $this->retour .= ('<li><a href="Configuration">Config</a></li>');
         }
         if ($page === "Finish") {
             $this->progressbarcolor = "success";
             $this->progressbarpourcent = 100;
             $this->retour .= ('<li><a href="Require">Require</a></li>');
             $this->retour .= ('<li><a href="File">File</a></li>');
-            $this->retour .= ('<li><a href="Config">Config</a></li>');
+            $this->retour .= ('<li><a href="Configuration">Config</a></li>');
             $this->retour .= ('<li><a href="Database">Database</a></li>');
         }
         

@@ -2,12 +2,20 @@
 <hr />
 <form>
     <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <span class="Loading" style="display: none;">
+             <div class="alert alert-warning text-center" role="alert">Loading</div>
+        </span>
+        <span class="inputnull" style="display: none;">
+            <div class="alert alert-danger text-center" role="alert">Security Key is null</div>
+        </span>
+        <span class="success" style="display: none;">
+            <div class="alert alert-success text-center" role="alert">Configuration success, Redirect in 3sec</div>
+        </span>
+        <span class="error" style="display: none;">
+            <div class="alert alert-danger text-center" role="alert">Error system</div>
+        </span>
+        <label for="InputSecurityKey">Security Key</label>
+        <input type="text" class="form-control" id="InputSecurityKey" placeholder="Security Key">
     </div>
 </form>
-<p><a class="btn btn-sm btn-success" href="File" role="button">Previous</a> - <a class="btn btn-sm btn-success" href="Database" role="button">Next</a></p>
+<p><a class="btn btn-sm btn-success" href="File" role="button">Previous</a> - <span class="btn btn-sm btn-success addconfig" href="Database" role="button">Next</span></p>

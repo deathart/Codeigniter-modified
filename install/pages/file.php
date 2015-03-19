@@ -96,4 +96,4 @@
         </tr>
     </tbody>
 </table>
-<p><a class="btn btn-sm btn-success" href="Require" role="button">Previous</a> - <a class="btn btn-sm btn-success" href="Config" role="button">Next</a></p>
+<p><a class="btn btn-sm btn-success" href="Require" role="button">Previous</a> - <a class="btn btn-sm btn-success" href="Configuration" role="button">Next</a></p>
