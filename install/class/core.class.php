@@ -60,4 +60,10 @@ class core {
         
     }
     
+    public function finich () {
+        
+        $fp = fopen("../install.lock","w+");
+        
+    }
+    
 }

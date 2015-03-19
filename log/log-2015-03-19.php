@@ -7316,3 +7316,42 @@ INFO - 2015-03-19 01:32:59 --> Helper loaded: text_helper
 INFO - 2015-03-19 01:32:59 --> File loaded: C:\xampp\Codeigniter-modified\application\views\profiler_template.php
 INFO - 2015-03-19 01:32:59 --> Final output sent to browser
 DEBUG - 2015-03-19 01:32:59 --> Total execution time: 0.2913
+INFO - 2015-03-19 07:42:03 --> Config Class Initialized
+INFO - 2015-03-19 07:42:03 --> Hooks Class Initialized
+DEBUG - 2015-03-19 07:42:03 --> UTF-8 Support Enabled
+INFO - 2015-03-19 07:42:03 --> Utf8 Class Initialized
+INFO - 2015-03-19 07:42:03 --> URI Class Initialized
+DEBUG - 2015-03-19 07:42:03 --> No URI present. Default controller set.
+INFO - 2015-03-19 07:42:03 --> Router Class Initialized
+INFO - 2015-03-19 07:42:03 --> Output Class Initialized
+INFO - 2015-03-19 07:42:03 --> Security Class Initialized
+DEBUG - 2015-03-19 07:42:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-03-19 07:42:03 --> Input Class Initialized
+INFO - 2015-03-19 07:42:03 --> Language Class Initialized
+INFO - 2015-03-19 07:42:03 --> Config Class Initialized
+INFO - 2015-03-19 07:42:03 --> Hooks Class Initialized
+DEBUG - 2015-03-19 07:42:03 --> UTF-8 Support Enabled
+INFO - 2015-03-19 07:42:03 --> Utf8 Class Initialized
+INFO - 2015-03-19 07:42:03 --> URI Class Initialized
+INFO - 2015-03-19 07:42:03 --> Router Class Initialized
+INFO - 2015-03-19 07:42:03 --> Output Class Initialized
+INFO - 2015-03-19 07:42:03 --> Security Class Initialized
+DEBUG - 2015-03-19 07:42:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-03-19 07:42:03 --> Input Class Initialized
+INFO - 2015-03-19 07:42:03 --> Language Class Initialized
+INFO - 2015-03-19 07:42:03 --> Loader Class Initialized
+DEBUG - 2015-03-19 07:42:03 --> Config file loaded: C:\xampp\Codeigniter-modified\application\config/debugbar.php
+INFO - 2015-03-19 07:42:03 --> Helper loaded: url_helper
+INFO - 2015-03-19 07:42:03 --> Helper loaded: language_helper
+INFO - 2015-03-19 07:42:03 --> Language file loaded: language/french/profiler.php
+INFO - 2015-03-19 07:42:03 --> Database Driver Class Initialized
+INFO - 2015-03-19 07:42:04 --> Session: Class initialized using 'files' driver.
+DEBUG - 2015-03-19 07:42:04 --> Forensics Console library loaded
+INFO - 2015-03-19 07:42:04 --> Parser Class Initialized
+INFO - 2015-03-19 07:42:04 --> Controller Class Initialized
+INFO - 2015-03-19 07:42:04 --> File loaded: C:\xampp\Codeigniter-modified\application\views\pages/welcome_message.php
+INFO - 2015-03-19 07:42:04 --> File loaded: C:\xampp\Codeigniter-modified\application\views\layouts/default.php
+INFO - 2015-03-19 07:42:04 --> Helper loaded: text_helper
+INFO - 2015-03-19 07:42:04 --> File loaded: C:\xampp\Codeigniter-modified\application\views\profiler_template.php
+INFO - 2015-03-19 07:42:04 --> Final output sent to browser
+DEBUG - 2015-03-19 07:42:04 --> Total execution time: 0.2806

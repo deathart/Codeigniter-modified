@@ -1,3 +1,6 @@
 <h2>You are finish installation</h2>
 <hr />
-<span class="btn btn-sm btn-success" href="Finish" role="button">Exit install system</span>
+<?php 
+echo $core->finich();
+?>
+<a class="btn btn-sm btn-success" href="../" role="button">Exit install system</a>

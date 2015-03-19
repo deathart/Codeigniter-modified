@@ -55,13 +55,6 @@ if (!file_exists('install.lock')) {
     echo('<meta http-equiv="Refresh" content="0; url='.$_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] .'/install/index.php" />');
     exit();
 }
-elseif (is_dir('install')) {
-    header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
-    echo 'The installation has already been done, thank you delete the "install" folder for more safety !';
-    exit(3); // EXIT_CONFIG
-}
-
-
 
 /*
  *---------------------------------------------------------------
@@ -108,6 +101,11 @@ switch (ENVIRONMENT)
 		{
 			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
 		}
+                if (is_dir('install')) {
+                    header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+                    echo 'The installation has already been done, thank you delete the "install" folder for more safety !';
+                    exit(3); // EXIT_CONFIG
+                }
 	break;
 
 	default:
