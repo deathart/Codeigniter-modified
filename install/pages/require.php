@@ -1,4 +1,5 @@
 <div class="text-center"><h2>Php require</h2></div>
+<hr />
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -75,4 +76,4 @@
         </tr>
     </tbody>
 </table>
-<p><a class="btn btn-lg btn-success" href="File" role="button">Test files</a></p>
+<p><a class="btn btn-sm btn-success" href="Home" role="button">Previous</a> - <a class="btn btn-sm btn-success" href="File" role="button">Next</a></p>

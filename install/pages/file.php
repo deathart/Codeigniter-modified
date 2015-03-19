@@ -1,4 +1,5 @@
 <h2>Test file</h2>
+<hr />
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -45,6 +46,7 @@
     </tbody>
 </table>
 <h2>test chmod</h2>
+<hr />
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -94,4 +96,4 @@
         </tr>
     </tbody>
 </table>
-<p><a class="btn btn-lg btn-success" href="Config" role="button">Config</a></p>
+<p><a class="btn btn-sm btn-success" href="Require" role="button">Previous</a> - <a class="btn btn-sm btn-success" href="Config" role="button">Next</a></p>
