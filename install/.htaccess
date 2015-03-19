@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+    RewriteBase /install/
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?script=$1 [QSA,L]
+
+    AddDefaultCharset utf-8
+</IfModule>
