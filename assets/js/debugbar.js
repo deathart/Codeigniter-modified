@@ -113,4 +113,4 @@ var ci_profiler_bar = {
 
 window.onload = function() {
 	ci_profiler_bar.set_load_state();
-}
+};

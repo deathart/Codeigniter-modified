@@ -9,8 +9,6 @@ class Welcome extends CI_Controller {
         
         parent::__construct();
         
-        $this->output->enable_profiler(true);
-        
         $this->title_for_layout = ('Welcome to CodeIgniter');
         
         $this->layout->add_includes('css', 'assets/css/style.css');
@@ -18,6 +16,7 @@ class Welcome extends CI_Controller {
         
         $this->layout->add_includes('js', 'assets/js/jquery.js');
         $this->layout->add_includes('js', 'assets/js/debugbar.js');
+        $this->layout->add_includes('js', 'assets/js/script.js');
         
     }
 
@@ -36,9 +35,29 @@ class Welcome extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see http://codeigniter.com/user_guide/general/urls.html
      */
-    public function index()
-    {
+    public function index() {
+        
+        $this->output->enable_profiler(true);
+        
+        $this->load->helper('MY_captcha');
+        
+        $this->data['captcha'] = create_captcha(6);
+        
         $this->data['ci_version'] = 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>';;
         $this->layout->view('pages/welcome_message', $this->data);
+        
     }
+    
+    public function AjaxCaptcha () {
+        
+        if ($_POST['captcha'] === $this->session->userdata('captcha_code')) {
+            $this->session->unset_userdata('aptcha_code');
+            echo 1;
+        }
+        else {
+            echo 0;
+        }
+        
+    }
+    
 }

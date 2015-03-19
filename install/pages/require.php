@@ -74,6 +74,23 @@
                 
             </td>
         </tr>
+        <tr>
+            <th>
+                GD extension
+            </th>
+            <?php
+            if (extension_loaded('gd')) {
+                echo ('<td class="success">OK</td>');
+            }
+            else {
+                echo ('<td class="danger">NOT OK</td>');
+                exit;
+            }
+            ?>
+            <td>
+                
+            </td>
+        </tr>
     </tbody>
 </table>
 <p><a class="btn btn-sm btn-success" href="Home" role="button">Previous</a> - <a class="btn btn-sm btn-success" href="File" role="button">Next</a></p>
