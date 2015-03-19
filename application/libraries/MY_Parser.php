@@ -81,7 +81,7 @@ class MY_Parser extends CI_Parser {
     
     protected function parse_function($template) {
         
-        $template = str_replace('{function:base_url}', $this->ci->config->item('base_url_perso') . "/", $template);
+        $template = str_replace('{function:base_url}', base_url() . "/" . $this->ci->uri->segment(2) . "/", $template);
         $template = str_replace('{function:controller}', $this->ci->uri->segment(2).'/', $template);
         $template = str_replace('{function:title_for_layout}', $this->ci->title_for_layout, $template);
         $template = str_replace('{function:assets_images}', $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . "/assets/images/", $template);

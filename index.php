@@ -37,6 +37,35 @@
  */
 
 /*
+ * Fix bug with 1&1 Hebergement
+ */
+
+if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+    $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
+
+if(!ini_get('date.timezone') ){
+    date_default_timezone_set('GMT');
+}
+
+/*
+ * Check installation
+ */
+if (!file_exists('install.lock'))
+{
+    echo('<meta http-equiv="Refresh" content="0; url='.$_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] .'/install/index.php" />');
+    exit();
+}
+elseif (is_dir('install'))
+    {
+        header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+        echo 'The installation has already been done, thank you delete the "install" folder for more safety !';
+        exit(3); // EXIT_CONFIG
+    }
+
+
+
+/*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
  *---------------------------------------------------------------
