@@ -20,4 +20,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <p><span class="captchaTest" style="cursor: pointer;">Submit</span></p>
     </div>
 </div>
+<div id="container">
+    <h1>Test Gravatar Library (<a href="https://github.com/ivantcholakov/Codeigniter-Gravatar" target="_blank">https://github.com/ivantcholakov/Codeigniter-Gravatar</a>)</h1>
+    <div id="body">
+        <div class="InputGravatarHTML">
+            <p>Please input email :</p>
+            <p><input type="email" id="InputGravatarTest" /></p>
+            <p><span class="gravatarTest" style="cursor: pointer;">Submit</span></p>
+        </div>
+        <div class="ajax_box_gravatar">
+            <div style="display:none" id="dvgravatar">
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+</div>
 <p class="footer"><?php echo $ci_version ?></p>

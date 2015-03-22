@@ -18,6 +18,8 @@ class Welcome extends CI_Controller {
         $this->layout->add_includes('js', 'assets/js/debugbar.js');
         $this->layout->add_includes('js', 'assets/js/script.js');
         
+        $this->data['ci_version'] = 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>';
+        
     }
 
     /**
@@ -43,7 +45,6 @@ class Welcome extends CI_Controller {
         
         $this->data['captcha'] = create_captcha(6);
         
-        $this->data['ci_version'] = 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>';;
         $this->layout->view('pages/welcome_message', $this->data);
         
     }
@@ -57,6 +58,43 @@ class Welcome extends CI_Controller {
         else {
             echo 0;
         }
+        
+    }
+    
+    public function AjaxGravatar ($email) {
+        
+        $this->load->library('gravatar');
+        
+        echo ('<p>');
+        
+        $gravatar_url = $this->gravatar->get($email);
+
+        var_dump($gravatar_url);
+
+        echo '<br />';
+        echo '<br />';
+
+        echo '<img src="'.$gravatar_url.'" />';
+
+        echo '<br />';
+        echo '<br />';
+
+        $gravatar_profile = $this->gravatar->get_profile_data($email);
+
+        echo '<pre>';
+        echo print_r($gravatar_profile, true);
+        echo '</pre>';
+
+        echo '<br />';
+        echo '<br />';
+
+        $last_error = $this->gravatar->last_error();
+
+        echo '<pre>';
+        echo print_r($last_error, true);
+        echo '</pre>';
+        
+        echo ('</p>');
         
     }
     

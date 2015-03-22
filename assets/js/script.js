@@ -1,5 +1,7 @@
 $(document).ready(function () {
     
+    var base_url = window.location.protocol+"//"+window.location.host;
+    
     /**
      * Captcha Ajax
      */
@@ -11,7 +13,7 @@ $(document).ready(function () {
         else {
             $.ajax({
                 type: "POST", // methode de transmission des données au fichier php
-                url: window.location.protocol+"//"+window.location.host+"/fr/Welcome/AjaxCaptcha", // url du fichier php
+                url: base_url+"/fr/Welcome/AjaxCaptcha", // url du fichier php
                 data : "&captcha=" + captcha,
                 success: function(msg){
                     if (msg == "1") {
@@ -25,6 +27,28 @@ $(document).ready(function () {
 
                     }
                 }
+            });
+        }
+    });
+    
+    /**
+     * Gravatar Lib
+     */
+    $(".gravatarTest").click(function(){
+        
+        var email = $("#InputGravatarTest").val();
+        
+        if (!email) {
+            alert('Thank you filling the fields');
+        }
+        else {
+            $("#dvgravatar").show();
+
+            $(".ajax_box_gravatar").load(base_url+"/fr/Welcome/AjaxGravatar/"+email, function(){ 
+                
+                $(".InputGravatarHTML").hide();
+                $("#dvgravatar").hide();
+
             });
         }
     });
