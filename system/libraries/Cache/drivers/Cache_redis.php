@@ -111,7 +111,7 @@ class CI_Cache_redis extends CI_Driver
 	{
 		if (is_array($data) OR is_object($data))
 		{
-			if ( ! $this->_redis->sAdd('_ci_redis_serialized', $id))
+			if ( ! $this->_redis->sIsMember('_ci_redis_serialized', $id) && ! $this->_redis->sAdd('_ci_redis_serialized', $id))
 			{
 				return FALSE;
 			}
@@ -223,7 +223,7 @@ class CI_Cache_redis extends CI_Driver
 	{
 		$value = $this->get($key);
 
-		if ($value)
+		if ($value !== FALSE)
 		{
 			return array(
 				'expire' => time() + $this->_redis->ttl($key),
@@ -270,7 +270,7 @@ class CI_Cache_redis extends CI_Driver
 
 		if ($CI->config->load('redis', TRUE, TRUE))
 		{
-			$config += $CI->config->item('redis');
+			$config = $CI->config->item('redis');
 		}
 
 		$config = array_merge(self::$_default_config, $config);
@@ -302,7 +302,11 @@ class CI_Cache_redis extends CI_Driver
 
 		if (isset($config['password']))
 		{
-			$this->_redis->auth($config['password']);
+			if ( ! $this->_redis->auth($config['password']))
+			{
+				log_message('debug', 'Cache: Redis authentication failed.');
+				return FALSE;
+			}
 		}
 
 		// Initialize the index of serialized values.
