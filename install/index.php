@@ -1,9 +1,7 @@
 <?php
 session_start();
+require ('lang/' . $_SESSION['lang'] . '/base.php');
 include ('class/core.class.php');
-$core = new core();
-$Page_Now = $_GET['script'];
-require ('lang/' . $_SESSION['lang'] . '.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,60 +32,68 @@ require ('lang/' . $_SESSION['lang'] . '.php');
     <body>
         <div class="container">
             <div class="header clearfix">
-                <div class="pull-left"><h3 class="text-muted">Install</h3></div>
+                <div class="pull-left"><h3 class="text-muted"><?php echo $lang['install']; ?></h3></div>
                 <div class="pull-right">
                     <img src="assets/images/United-Kingdom.png" alt="England" class="langChoseEN" /> <img src="assets/images/France.png" alt="France" class="langChoseFR" />
                 </div>
             </div>
             <span class="LoadingLang" style="display: none;">
-                <div class="alert alert-warning text-center" role="alert">Loading</div>
+                <div class="alert alert-warning text-center" role="alert"><?php echo $lang['loading']; ?></div>
             </span>
             <span class="successLang" style="display: none;">
-                <div class="alert alert-success text-center" role="alert">Lang changed, reloading</div>
+                <div class="alert alert-success text-center" role="alert"><?php echo $lang['lang_success']; ?></div>
             </span>
             <span class="errorLang" style="display: none;">
-                <div class="alert alert-danger text-center" role="alert">Error system</div>
+                <div class="alert alert-danger text-center" role="alert"><?php echo $lang['lang_error']; ?></div>
             </span>
             <?php
-            if(!empty($Page_Now)) {
-                if (strip_tags($Page_Now) != "Home") {
-                    echo $core->breadcrumbs(strip_tags($Page_Now));
+            if(!empty($_GET['script'])) {
+                if (strip_tags($_GET['script']) != "Home") {
+                    echo $core->breadcrumbs(strip_tags($_GET['script']));
                 }
             }
             ?>
             <div class="jumbotron">
                 <?php
-                if(!empty($Page_Now)) {
-                    switch(strip_tags($Page_Now)) {
+                if(!empty($_GET['script'])) {
+                    switch(strip_tags($_GET['script'])) {
                         case 'Home':
+                            require ('lang/' . $_SESSION['lang'] . '/home.php');
                             include ('pages/home.php');                   
                         break;
                     
                         case 'Require':
+                            require ('lang/' . $_SESSION['lang'] . '/require.php');
                             include ('pages/require.php');
                         break;
                     
                         case 'File':
+                            require ('lang/' . $_SESSION['lang'] . '/file.php');
                             include ('pages/file.php');
                         break;
                     
                         case 'Configuration':
+                            require ('lang/' . $_SESSION['lang'] . '/config.php');
                             include ('pages/config.php');
                         break;
                     
                         case 'Database':
+                            require ('lang/' . $_SESSION['lang'] . '/database.php');
                             include ('pages/database.php');
                         break;
                     
                         case 'Finish':
+                            require ('lang/' . $_SESSION['lang'] . '/finish.php');
                             include ('pages/finish.php');
                         break;
                     
                         default:
+                            require ('lang/' . $_SESSION['lang'] . '/home.php');
                             include ('pages/home.php');                   
                         break;        
                     }
                 } else {
+                    require ('lang/' . $_SESSION['lang'] . '/home.php');
                     include ('pages/home.php');    
                 }
                 ?>

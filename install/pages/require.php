@@ -1,16 +1,16 @@
-<div class="text-center"><h2>Php require</h2></div>
+<div class="text-center"><h2>PHP <?php echo $lang['require']; ?></h2></div>
 <hr />
 <table class="table table-bordered">
     <thead>
         <tr>
             <th>
-                Name
+                <?php echo $lang['name']; ?>
             </th>
             <th>
-                Result
+                <?php echo $lang['result']; ?>
             </th>
             <th>
-                Information
+                <?php echo $lang['info']; ?>
             </th>
         </tr>
     </thead>
@@ -83,4 +83,4 @@
         </tr>
     </tbody>
 </table>
-<p><a class="btn btn-sm btn-success" href="Home" role="button">Previous</a> - <a class="btn btn-sm btn-success" href="File" role="button">Next</a></p>
+<p><a class="btn btn-sm btn-success" href="Home" role="button"><?php echo $lang['previous']; ?></a> - <a class="btn btn-sm btn-success" href="File" role="button"><?php echo $lang['next']; ?></a></p>

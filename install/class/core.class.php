@@ -9,19 +9,27 @@ class core {
     protected $progressbarpourcent;
     
     protected $progressbarcolor;
+    
+
 
 
     public function __construct() {
         
+        global $lang;
+        
+        $this->lang = $lang;
+        
         if (empty($_SESSION['lang'])) {
+            
             $_SESSION['lang'] = "en";
+            
         }
         
     }
     
     public function breadcrumbs ($page) {
         
-        $this->retour = ('<ol class="breadcrumb"><li><a href="Home">Home</a></li>');
+        $this->retour = ('<ol class="breadcrumb"><li><a href="Home">'.$this->lang['home'].'</a></li>');
         
         if ($page === "Require") {
             $this->progressbarcolor = "danger";
@@ -30,28 +38,28 @@ class core {
         if ($page === "File") {
             $this->progressbarcolor = "warning";
             $this->progressbarpourcent = 20;
-            $this->retour .= ('<li><a href="Require">Require</a></li>');
+            $this->retour .= ('<li><a href="Require">'.$this->lang['require'].'</a></li>');
         }
         if ($page === "Configuration") {
             $this->progressbarcolor = "warning";
             $this->progressbarpourcent = 40;
-            $this->retour .= ('<li><a href="Require">Require</a></li>');
-            $this->retour .= ('<li><a href="File">File</a></li>');
+            $this->retour .= ('<li><a href="Require">'.$this->lang['require'].'</a></li>');
+            $this->retour .= ('<li><a href="File">'.$this->lang['file'].'</a></li>');
         }
         if ($page === "Database") {
             $this->progressbarcolor = "warning";
             $this->progressbarpourcent = 70;
-            $this->retour .= ('<li><a href="Require">Require</a></li>');
-            $this->retour .= ('<li><a href="File">File</a></li>');
-            $this->retour .= ('<li><a href="Configuration">Config</a></li>');
+            $this->retour .= ('<li><a href="Require">'.$this->lang['require'].'</a></li>');
+            $this->retour .= ('<li><a href="File">'.$this->lang['file'].'</a></li>');
+            $this->retour .= ('<li><a href="Configuration">'.$this->lang['config'].'</a></li>');
         }
         if ($page === "Finish") {
             $this->progressbarcolor = "success";
             $this->progressbarpourcent = 100;
-            $this->retour .= ('<li><a href="Require">Require</a></li>');
-            $this->retour .= ('<li><a href="File">File</a></li>');
-            $this->retour .= ('<li><a href="Configuration">Config</a></li>');
-            $this->retour .= ('<li><a href="Database">Database</a></li>');
+            $this->retour .= ('<li><a href="Require">'.$this->lang['require'].'</a></li>');
+            $this->retour .= ('<li><a href="File">'.$this->lang['file'].'</a></li>');
+            $this->retour .= ('<li><a href="Configuration">'.$this->lang['config'].'</a></li>');
+            $this->retour .= ('<li><a href="Database">'.$this->lang['database'].'</a></li>');
         }
         
         
@@ -71,3 +79,5 @@ class core {
     }
     
 }
+
+$core = new core();

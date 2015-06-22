@@ -2,7 +2,7 @@
 
 /**
  * 
- * Install
+ * Micro-Framework
  * 
  * An open source application development framework for PHP
  *
@@ -29,3 +29,26 @@
  * THE SOFTWARE.
  *
  */
+
+/*
+ * Menu
+ */
+$lang['install'] = "Install";
+$lang['home'] = "Home";
+$lang['require'] = "Require";
+$lang['file'] = "File";
+$lang['config'] = "Config";
+$lang['database'] = "Database";
+
+/* 
+ * Lang 
+ */
+$lang['lang_success'] = "Language changed with success , reload the current page.";
+$lang['lang_error'] = "Language Change Error.";
+
+/*
+ * General
+ */
+$lang['loading'] = "Loading";
+$lang['next'] = "Next";
+$lang['previous'] = "Next";

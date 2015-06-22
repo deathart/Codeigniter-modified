@@ -2,7 +2,7 @@
 
 /**
  * 
- * Install
+ * Micro-Framework
  * 
  * An open source application development framework for PHP
  *
@@ -29,3 +29,7 @@
  * THE SOFTWARE.
  *
  */
+
+$lang['name'] = "Name";
+$lang['result'] = "Result";
+$lang['info'] = "Information";

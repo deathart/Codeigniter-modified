@@ -37,7 +37,7 @@ $(document).ready(function () {
 
             type: "POST", // methode de transmission des données au fichier php
             url: "class/ajax.class.php", // url du fichier php
-            data : "LangSelect=1",
+            data : "LangSelect=2",
             success: function(msg){
                 
                 $(".LoadingLang").hide();
