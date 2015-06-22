@@ -1,5 +1,7 @@
 $(document).ready(function () {
     
+    //Verify language
+    
     $(".addconfig").click(function() {
         
         $(".Loading").show();

@@ -2,6 +2,8 @@
 
 class core {
     
+    protected $fp;
+    
     protected $retour;
     
     protected $progressbarpourcent;
@@ -11,7 +13,9 @@ class core {
 
     public function __construct() {
         
-        
+        if (empty($_SESSION['lang'])) {
+            $_SESSION['lang'] = "en";
+        }
         
     }
     
@@ -28,7 +32,7 @@ class core {
             $this->progressbarpourcent = 20;
             $this->retour .= ('<li><a href="Require">Require</a></li>');
         }
-        if ($page === "Config") {
+        if ($page === "Configuration") {
             $this->progressbarcolor = "warning";
             $this->progressbarpourcent = 40;
             $this->retour .= ('<li><a href="Require">Require</a></li>');
@@ -62,7 +66,7 @@ class core {
     
     public function finich () {
         
-        $fp = fopen("../install.lock","w+");
+        $this->fp = fopen("../install.lock","w+");
         
     }
     

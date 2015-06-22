@@ -1,6 +1,9 @@
 <?php
+session_start();
 include ('class/core.class.php');
 $core = new core();
+$Page_Now = $_GET['script'];
+require ('lang/' . $_SESSION['lang'] . '.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +17,13 @@ $core = new core();
         <link rel="icon" href="favicon.ico">
         <title>Installation</title>
         <!-- Bootstrap core CSS -->
-        <link href="assets/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
         <!-- Custom styles for this template -->
-        <link href="assets/jumbotron-narrow.css" rel="stylesheet">
+        <link href="assets/css/jumbotron-narrow.css" rel="stylesheet">
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="assets/ie8-responsive-file-warning.js"></script><![endif]-->
-        <script src="assets/ie-emulation-modes-warning.js"></script>
+        <script src="assets/js/ie-emulation-modes-warning.js"></script>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -30,19 +34,22 @@ $core = new core();
     <body>
         <div class="container">
             <div class="header clearfix">
-                <h3 class="text-muted">Install</h3>
+                <div class="pull-left"><h3 class="text-muted">Install</h3></div>
+                <div class="pull-right">
+                    <img src="assets/images/United-Kingdom.png" alt="England" class="langChoseEN" /> <img src="assets/images/France.png" alt="France" class="langChoseFR" />
+                </div>
             </div>
             <?php
-            if(!empty($_GET['script'])) {
-                if (strip_tags($_GET['script']) != "Home") {
-                    echo $core->breadcrumbs(strip_tags($_GET['script']));
+            if(!empty($Page_Now)) {
+                if (strip_tags($Page_Now) != "Home") {
+                    echo $core->breadcrumbs(strip_tags($Page_Now));
                 }
             }
             ?>
             <div class="jumbotron">
                 <?php
-                if(!empty($_GET['script'])) {
-                    switch(strip_tags($_GET['script'])) {
+                if(!empty($Page_Now)) {
+                    switch(strip_tags($Page_Now)) {
                         case 'Home':
                             include ('pages/home.php');                   
                         break;
@@ -81,7 +88,7 @@ $core = new core();
             </footer>
         </div> <!-- /container -->
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="assets/ie10-viewport-bug-workaround.js"></script>
-        <script src="assets/ajax.js"></script>
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="assets/js/ajax.js"></script>
     </body>
 </html>

@@ -68,6 +68,20 @@ class AjaxRequest {
         
     }
     
+    public function ChoseLanguage ($var) {
+        
+        if ($var == 1) {
+            $_SESSION['lang'] = "en";
+        }
+        else if ($var == 2) {
+            $_SESSION['lang'] = "fr";
+        }
+        else {
+            $_SESSION['lang'] = "en";
+        }
+        
+    }
+    
 }
 
 $AjaxRequest = new AjaxRequest();
