@@ -67,9 +67,8 @@
                 config.php
             </th>
             <?php
-            $config_file = "../application/config/config.php";
-            @chmod($config_file,0777);
-            if (is_writable($config_file)) {
+            @chmod("../application/config/config.php",0777);
+            if (is_writable("../application/config/config.php")) {
                 echo ('<td class="success">OK</td><td></td>');
             }
             else {
@@ -83,9 +82,53 @@
                 database.php
             </th>
             <?php
-            $database_file = "../application/config/database.php";
-            @chmod($database_file,0777);
-            if (is_writable($database_file)) {
+            @chmod("../application/config/database.php",0777);
+            if (is_writable("../application/config/database.php")) {
+                echo ('<td class="success">OK</td><td></td>');
+            }
+            else {
+                echo ('<td class="danger">NOT OK</td><td></td>');
+                exit;
+            }
+            ?>
+        </tr>
+        <tr>
+            <th>
+                routes.php
+            </th>
+            <?php
+            @chmod("../application/config/routes.php",0777);
+            if (is_writable("../application/config/routes.php")) {
+                echo ('<td class="success">OK</td><td></td>');
+            }
+            else {
+                echo ('<td class="danger">NOT OK</td><td></td>');
+                exit;
+            }
+            ?>
+        </tr>
+        <tr>
+            <th>
+                facebook.php
+            </th>
+            <?php
+            @chmod("../application/config/facebook.php",0777);
+            if (is_writable("../application/config/facebook.php")) {
+                echo ('<td class="success">OK</td><td></td>');
+            }
+            else {
+                echo ('<td class="danger">NOT OK</td><td></td>');
+                exit;
+            }
+            ?>
+        </tr>
+        <tr>
+            <th>
+                tweet.php
+            </th>
+            <?php
+            @chmod("../application/config/tweet.php",0777);
+            if (is_writable("../application/config/tweet.php")) {
                 echo ('<td class="success">OK</td><td></td>');
             }
             else {

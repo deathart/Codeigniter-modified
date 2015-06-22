@@ -21,24 +21,14 @@
             </th>
             <?php 
             if (version_compare(PHP_VERSION, '5.4', '>=')) {
-                echo ('<td class="success">OK</td><td>The minimum version of php require is 5.4</td>');
+                echo ('<td class="success">OK ('.PHP_VERSION.')</td>');
             }
             else {
-                echo ('<td class="danger">NOT OK</td><td>The minimum version of php require is 5.4</td>');
+                echo ('<td class="danger">NOT OK ('.PHP_VERSION.')</td>');
                 exit;
             }
             ?>
-        </tr>
-        <tr>
-            <th>
-                Variable superglobal
-            </th>
-            <td class="success">
-                OK
-            </td>
-            <td>
-                
-            </td>
+            <td>The minimum version of php require is 5.4</td>
         </tr>
         <tr>
             <th>
