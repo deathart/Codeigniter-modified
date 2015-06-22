@@ -39,6 +39,15 @@ require ('lang/' . $_SESSION['lang'] . '.php');
                     <img src="assets/images/United-Kingdom.png" alt="England" class="langChoseEN" /> <img src="assets/images/France.png" alt="France" class="langChoseFR" />
                 </div>
             </div>
+            <span class="LoadingLang" style="display: none;">
+                <div class="alert alert-warning text-center" role="alert">Loading</div>
+            </span>
+            <span class="successLang" style="display: none;">
+                <div class="alert alert-success text-center" role="alert">Lang changed, reloading</div>
+            </span>
+            <span class="errorLang" style="display: none;">
+                <div class="alert alert-danger text-center" role="alert">Error system</div>
+            </span>
             <?php
             if(!empty($Page_Now)) {
                 if (strip_tags($Page_Now) != "Home") {

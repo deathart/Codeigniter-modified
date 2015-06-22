@@ -1,6 +1,60 @@
 $(document).ready(function () {
     
-    //Verify language
+    //Chose language
+    //EN
+    $(".langChoseEN").click(function() {
+        
+        $(".LoadingLang").show();
+        
+        $.ajax({ // fonction permettant de faire de l'ajax
+
+            type: "POST", // methode de transmission des données au fichier php
+            url: "class/ajax.class.php", // url du fichier php
+            data : "LangSelect=1",
+            success: function(msg){
+                
+                $(".LoadingLang").hide();
+                
+                if (msg == 1) {
+                    $(".errorLang").hide();
+                    $(".successLang").show();
+                    setTimeout(location.reload(), 3000);
+                }
+                else {
+                    $(".errorLang").show();
+                }
+            }
+
+        });
+        
+    });
+    //FR
+    $(".langChoseFR").click(function() {
+        
+        $(".LoadingLang").show();
+        
+        $.ajax({ // fonction permettant de faire de l'ajax
+
+            type: "POST", // methode de transmission des données au fichier php
+            url: "class/ajax.class.php", // url du fichier php
+            data : "LangSelect=1",
+            success: function(msg){
+                
+                $(".LoadingLang").hide();
+                
+                if (msg == 1) {
+                    $(".errorLang").hide();
+                    $(".successLang").show();
+                    setTimeout(location.reload(), 3000);
+                }
+                else {
+                    $(".errorLang").show();
+                }
+            }
+
+        });
+        
+    });
     
     $(".addconfig").click(function() {
         

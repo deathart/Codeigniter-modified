@@ -80,16 +80,22 @@ class AjaxRequest {
             $_SESSION['lang'] = "en";
         }
         
+        echo 1;
+        
     }
     
 }
 
 $AjaxRequest = new AjaxRequest();
 
-if(!empty($_POST['securitykey'])) {
+if (!empty($_POST['securitykey'])) {
     echo $AjaxRequest->UpdateSecuritykey($_POST['securitykey']);
 }
 
-if(!empty($_POST['Host'])) {
+if (!empty($_POST['Host'])) {
     echo $AjaxRequest->UpdateDatabase($_POST['Host'], $_POST['username'], $_POST['password'], $_POST['database']);
+}
+
+if (!empty($_POST['LangSelect'])) {
+    echo $AjaxRequest->ChoseLanguage($_POST['LangSelect']);
 }
