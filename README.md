@@ -7,9 +7,13 @@ Tout d'abord je tient à présiser que cette modification est principalement pou
   * Debug_Bar
   * Layout
   * My_Parser
+  * Gravatar
+  * Console
+  * Profiler
 * Core
   * My_lang
 * Helper
-  * My_language_helpert
+  * My_language_helper
+  * My_captcha_helper
 
 
