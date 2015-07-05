@@ -24,4 +24,4 @@
         <input type="text" class="form-control" id="InputDatabase" placeholder="Database">
     </div>
 </form>
-<p><a class="btn btn-sm btn-success" href="Configuration" role="button">Previous</a> - <span class="btn btn-sm btn-success adddatabase" href="Finish" role="button">Finish</span></p>
+<p><a class="btn btn-sm btn-success" href="Configuration" role="button"><?php echo $lang['previous']; ?></a> - <span class="btn btn-sm btn-success adddatabase" href="Module" role="button"><?php echo $lang['next']; ?></span></p>

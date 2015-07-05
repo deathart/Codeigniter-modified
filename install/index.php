@@ -1,6 +1,7 @@
 <?php
 session_start();
-require ('lang/' . $_SESSION['lang'] . '/base.php');
+if (empty($_SESSION['lang'])) { $_SESSION['lang'] = "en"; }
+include ('lang/' . $_SESSION['lang'] . '/base.php');
 include ('class/core.class.php');
 ?>
 <!DOCTYPE html>
@@ -80,6 +81,11 @@ include ('class/core.class.php');
                         case 'Database':
                             require ('lang/' . $_SESSION['lang'] . '/database.php');
                             include ('pages/database.php');
+                        break;
+                    
+                        case 'Module':
+                            require ('lang/' . $_SESSION['lang'] . '/module.php');
+                            include ('pages/module.php');
                         break;
                     
                         case 'Finish':

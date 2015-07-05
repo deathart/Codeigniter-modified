@@ -1,4 +1,4 @@
-<div class="text-center"><h2>PHP <?php echo $lang['require']; ?></h2></div>
+<div class="text-center"><h2><?php echo $lang['modulerequire']; ?></h2></div>
 <hr />
 <table class="table table-bordered">
     <thead>

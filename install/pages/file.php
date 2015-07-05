@@ -1,16 +1,16 @@
-<h2>Test file</h2>
+<h2><?php echo $lang['testfolder']; ?></h2>
 <hr />
 <table class="table table-bordered">
     <thead>
         <tr>
             <th>
-                Name
+                <?php echo $lang['name']; ?>
             </th>
             <th>
-                Result
+                <?php echo $lang['result']; ?>
             </th>
             <th>
-                Information
+                <?php echo $lang['info']; ?>
             </th>
         </tr>
     </thead>
@@ -45,19 +45,19 @@
         </tr>
     </tbody>
 </table>
-<h2>test chmod</h2>
+<h2><?php echo $lang['testfile']; ?></h2>
 <hr />
 <table class="table table-bordered">
     <thead>
         <tr>
             <th>
-                Name
+                <?php echo $lang['name']; ?>
             </th>
             <th>
-                Result
+                <?php echo $lang['result']; ?>
             </th>
             <th>
-                Information
+                <?php echo $lang['info']; ?>
             </th>
         </tr>
     </thead>
@@ -139,4 +139,4 @@
         </tr>
     </tbody>
 </table>
-<p><a class="btn btn-sm btn-success" href="Require" role="button">Previous</a> - <a class="btn btn-sm btn-success" href="Configuration" role="button">Next</a></p>
+<p><a class="btn btn-sm btn-success" href="Require" role="button"><?php echo $lang['previous']; ?></a> - <a class="btn btn-sm btn-success" href="Configuration" role="button"><?php echo $lang['next']; ?></a></p>

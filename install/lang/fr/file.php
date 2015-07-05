@@ -33,27 +33,5 @@
 /*
  * Menu
  */
-$lang['install'] = "Install";
-$lang['home'] = "Home";
-$lang['require'] = "Require";
-$lang['file'] = "File";
-$lang['config'] = "Config";
-$lang['database'] = "Database";
-$lang['module'] = "Module";
-$lang['finish'] = "Finish";
-
-/* 
- * Lang 
- */
-$lang['lang_success'] = "Language changed with success , reload the current page.";
-$lang['lang_error'] = "Language Change Error.";
-
-/*
- * General
- */
-$lang['loading'] = "Loading";
-$lang['next'] = "Next";
-$lang['previous'] = "Next";
-$lang['name'] = "Name";
-$lang['result'] = "Result";
-$lang['info'] = "Information";
+$lang['testfile'] = "Test d'ecriture de fichier";
+$lang['testfolder'] = "Test des dossiers";

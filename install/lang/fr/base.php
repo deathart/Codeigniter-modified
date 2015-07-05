@@ -35,10 +35,12 @@
  */
 $lang['install'] = "Installation";
 $lang['home'] = "Accueil";
-$lang['require'] = "Besoin";
+$lang['require'] = "Module PHP";
 $lang['file'] = "Fichier";
 $lang['config'] = "Configuration";
 $lang['database'] = "Base de donnée";
+$lang['module'] = "Module";
+$lang['finish'] = "Fin";
 
 /* 
  * Lang 
@@ -52,3 +54,6 @@ $lang['lang_error'] = "Erreur de changement de langue.";
 $lang['loading'] = "Chargement";
 $lang['next'] = "Suivant";
 $lang['previous'] = "Précédent";
+$lang['name'] = "Nom";
+$lang['result'] = "Resultat";
+$lang['info'] = "Information";

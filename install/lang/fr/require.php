@@ -30,6 +30,4 @@
  *
  */
 
-$lang['name'] = "Nom";
-$lang['result'] = "Resultat";
-$lang['info'] = "Information";
+$lang['modulerequire'] = "Module PHP obligatoire";
