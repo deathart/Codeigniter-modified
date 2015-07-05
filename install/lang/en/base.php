@@ -57,3 +57,4 @@ $lang['previous'] = "Next";
 $lang['name'] = "Name";
 $lang['result'] = "Result";
 $lang['info'] = "Information";
+$lang['error_system'] = "Error system !";

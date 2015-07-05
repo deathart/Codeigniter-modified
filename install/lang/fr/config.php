@@ -29,3 +29,9 @@
  * THE SOFTWARE.
  *
  */
+
+$lang['configfile'] = "Fichier de configuration";
+
+//Ajax lang
+$lang['keynull'] = "La clef est vide !";
+$lang['config_success'] = "La configuration à bien été enregistré !";

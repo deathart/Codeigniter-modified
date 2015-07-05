@@ -1,4 +1,4 @@
-<h2>Configuration file</h2>
+<h2><?php echo $lang['configfile']; ?></h2>
 <hr />
 <form>
     <div class="form-group">
@@ -6,13 +6,13 @@
              <div class="alert alert-warning text-center" role="alert"><?php $lang['loading']; ?></div>
         </span>
         <span class="inputnull" style="display: none;">
-            <div class="alert alert-danger text-center" role="alert">Security Key is null</div>
+            <div class="alert alert-danger text-center" role="alert"><?php echo $lang['keynull']; ?></div>
         </span>
         <span class="success" style="display: none;">
-            <div class="alert alert-success text-center" role="alert">Configuration success, Redirect in 3sec</div>
+            <div class="alert alert-success text-center" role="alert"><?php echo $lang['config_success']; ?></div>
         </span>
         <span class="error" style="display: none;">
-            <div class="alert alert-danger text-center" role="alert">Error system</div>
+            <div class="alert alert-danger text-center" role="alert"><?php echo $lang['error_system']; ?></div>
         </span>
         <label for="InputSecurityKey">Security Key</label>
         <input type="text" class="form-control" id="InputSecurityKey" placeholder="Security Key">

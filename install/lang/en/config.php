@@ -29,3 +29,9 @@
  * THE SOFTWARE.
  *
  */
+
+$lang['configfile'] = "Configuration file";
+
+//Ajax lang
+$lang['keynull'] = "Key is empty !";
+$lang['config_success'] = "The configuration been saved !";

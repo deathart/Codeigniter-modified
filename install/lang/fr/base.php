@@ -57,3 +57,4 @@ $lang['previous'] = "Précédent";
 $lang['name'] = "Nom";
 $lang['result'] = "Resultat";
 $lang['info'] = "Information";
+$lang['error_system'] = "Une erreur système est intervenu !";
