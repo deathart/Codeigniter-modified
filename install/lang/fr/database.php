@@ -29,3 +29,5 @@
  * THE SOFTWARE.
  *
  */
+
+$lang['configdatabase'] = "Configuration de la base de donnée";

@@ -1,9 +1,9 @@
-<h2>Configuration database</h2>
+<h2><?php echo $lang['configdatabase']; ?></h2>
 <hr />
 <form>
     <div class="form-group">
         <span class="Loading" style="display: none;">
-             <div class="alert alert-warning text-center" role="alert">Loading</div>
+             <div class="alert alert-warning text-center" role="alert"><?php echo $lang['loading']; ?></div>
         </span>
         <span class="inputnull" style="display: none;">
             <div class="alert alert-danger text-center" role="alert">Host is null</div>
