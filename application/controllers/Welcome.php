@@ -5,6 +5,8 @@ class Welcome extends CI_Controller {
     
     protected $data = array();
     
+    protected $email;
+    
     public function __construct() {
         
         parent::__construct();
@@ -63,11 +65,13 @@ class Welcome extends CI_Controller {
     
     public function AjaxGravatar ($email) {
         
+        $this->email = $email;
+        
         $this->load->library('gravatar');
         
         echo ('<p>');
         
-        $gravatar_url = $this->gravatar->get($email);
+        $gravatar_url = $this->gravatar->get($this->email);
 
         var_dump($gravatar_url);
 
@@ -79,7 +83,7 @@ class Welcome extends CI_Controller {
         echo '<br />';
         echo '<br />';
 
-        $gravatar_profile = $this->gravatar->get_profile_data($email);
+        $gravatar_profile = $this->gravatar->get_profile_data($this->email);
 
         echo '<pre>';
         echo print_r($gravatar_profile, true);
