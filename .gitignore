@@ -1,4 +1,5 @@
 /log/*
 /application/cache/*
+/application/sessions/*
 install.lock
 *.lock
