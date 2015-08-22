@@ -32,6 +32,7 @@ include ('class/core.class.php');
         <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
     </head>
     <body>
+        <div class="jumbotron">
         <div class="container">
             <div class="header clearfix">
                 <div class="pull-left"><h3 class="text-muted"><?php echo $lang['install']; ?></h3></div>
@@ -55,7 +56,7 @@ include ('class/core.class.php');
                 }
             }
             ?>
-            <div class="jumbotron">
+            
                 <?php
                 if(!empty($_GET['script'])) {
                     switch(strip_tags($_GET['script'])) {
@@ -104,11 +105,11 @@ include ('class/core.class.php');
                     include ('pages/home.php');    
                 }
                 ?>
-            </div>
             <footer class="footer">
                 <p>&copy; 2015</p>
             </footer>
         </div> <!-- /container -->
+        </div>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="assets/js/ajax.js"></script>

@@ -76,8 +76,8 @@ class core {
         
         $this->retour .= ('<li class="active">'.$this->pages.'</li>');
         $this->retour .= ('</ol>');
-        
-        $this->retour .= ('<div class="progress"><div class="progress-bar progress-bar-'.$this->progressbarcolor.' progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '.$this->progressbarpourcent.'%;">'.$this->progressbarpourcent.'%</div></div>');
+        $this->retour .= ('<progress class="progress progress-'.$this->progressbarcolor.'" value="'.$this->progressbarpourcent.'" max="100">'.$this->progressbarpourcent.'%</progress>');
+        //$this->retour .= ('<div class="progress"><div class="progress-bar progress-bar-'.$this->progressbarcolor.' progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '.$this->progressbarpourcent.'%;">'.$this->progressbarpourcent.'%</div></div>');
         
         return $this->retour;
         
