@@ -107,6 +107,7 @@
             }
             ?>
         </tr>
+        <!--
         <tr>
             <th>
                 facebook.php
@@ -137,6 +138,7 @@
             }
             ?>
         </tr>
+        -->
     </tbody>
 </table>
 <p><a class="btn btn-sm btn-success" href="Require" role="button"><?php echo $lang['previous']; ?></a> - <a class="btn btn-sm btn-success" href="Configuration" role="button"><?php echo $lang['next']; ?></a></p>

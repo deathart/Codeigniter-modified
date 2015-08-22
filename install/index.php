@@ -14,9 +14,9 @@ include ('class/core.class.php');
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="favicon.ico">
-        <title>Installation</title>
+        <title>CM - Installation</title>
         <!-- Bootstrap core CSS -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
         <link href="assets/css/style.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="assets/css/jumbotron-narrow.css" rel="stylesheet">
@@ -28,7 +28,8 @@ include ('class/core.class.php');
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
     </head>
     <body>
         <div class="container">

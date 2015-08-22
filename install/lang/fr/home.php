@@ -30,4 +30,4 @@
  *
  */
 
-$lang['motd'] = "Bienvenue à l'installation de assitant du cadre modificateur CodeIgniter par Deathart.";
+$lang['motd'] = "Bienvenue sur l'astistant d'installation de Codeigniter Modified par deathart.";
